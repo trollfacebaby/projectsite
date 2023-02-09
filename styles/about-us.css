@@ -1,0 +1,25 @@
+body * {
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-black);
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.content-container{
+    background-color: var(--color-white);
+    padding: 60px 70px;
+    border-radius: 30px;
+    transition: box-shadow var(--animation-for-img);
+}
+.content-container:hover,
+.content-container:focus{
+    box-shadow: 0 0 30px var(--color-white);
+}
+.description{
+    font-size: 30px;
+    font-family: var(--font-family-medium);
+}

@@ -1,0 +1,31 @@
+.purple_button, .white_button{
+    border-radius: 16px;
+    font-family: var(font-family-bold);
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+.white_button{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-32);
+    color: var(--color-purple);
+    transition: color var(--animation), border-color var(--animation), box-shadow var(--animation-for-img);
+}
+.purple_button{
+    color:var(--color-white);
+    background-color: var(--color-purple);
+    border-radius: 999px;
+    border: none;
+    transition: background var(--animation);
+}
+.purple_button:hover,
+.purple_button:focus{
+    background: var(--color-purple-light);
+}
+
+.white_button:hover,
+.white_button:focus{
+    color:var(--color-purple-light);
+    border-color: var(--color-grey-24);
+    box-shadow: 0 0 30px var(--color-white);
+}

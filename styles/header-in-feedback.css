@@ -1,0 +1,189 @@
+body *{
+    box-sizing: border-box;
+}
+a{
+    position: relative;
+    color: var(--color-black);
+    text-decoration: none;
+}
+.header{
+    background: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 16px 130px;
+}
+.header_button{
+    width: 170px;
+    height: 64px;
+}
+.header-title{
+    position: absolute;
+    top: 2.5px;
+    font-size: 48px;
+    font-family: var(--font-family-bold);
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+.header-logo-img{
+    width: 65px;
+    height: 65px;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+.header-link-point{
+    background: var(--color-purple-light);
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    margin: 0px 16px;
+}
+.header-link{
+    color: var(--color-purple);
+    font-family: var(--font-family-regular);
+    font-size: 18px;
+    text-decoration: none;
+    outline: none;
+    transition: color var(--animation);
+}
+.header-link:hover, 
+.header-link:focus{
+    color: var(--color-purple-light);
+
+}
+.link-feedback{
+    color: var(--color-black);
+    text-decoration: underline;
+}
+.container{
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.center-container{
+    background-color: var(--color-white);
+    padding: 60px 70px;
+    border-radius: 30px;
+    transition: box-shadow var(--animation-for-img);
+}
+.center-container:hover{
+    box-shadow: 0 0 30px var(--color-white);
+}
+.feedback-title-follow-us{
+    padding-bottom: 10px;
+}
+.feedback-title{
+    padding-bottom: 15px;
+}
+.feedback-title,
+.feedback-title-follow-us{
+    color: var(--color-grey-32);
+    font-size: 15px;
+    font-family: var(--font-family-medium);
+    margin: 0;
+}
+.email{
+    font-size: 25px;
+    font-family: var(--font-family-bold);
+    color: var(--color-purple);
+}
+.follow-us{
+    margin-bottom: 40px;
+}
+.feedback-form div:first-child{
+    margin-bottom: 30px;
+}
+.feedback-name-input-container::after{
+    background: url(../icons/icon-user.svg) no-repeat;
+}
+.feedback-email-input-container::after{
+    background: url(../icons/icon-mail.svg) no-repeat;
+}
+.feedback-form label::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+.feedback-form div{
+    display: flex;
+}
+.feedback-form input::placeholder{
+    color:var(--color-black);
+    font-family: var(--font-family-regular);
+}
+.feedback-form label{
+    position: relative;
+}
+.feedback-form label:hover > div{
+    opacity: .45;
+}
+.feedback-form label > div{ 
+    background: var(--color-grey-24);
+    opacity: .24;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    transition: opacity var(--animation);
+}
+.feedback-textarea-container::after{
+    background: url(../icons/icon-edit.svg) no-repeat;
+}
+.feedback-textarea-container > div{
+    border: 2px solid var(--color-purple);
+}
+.feedback-form input:hover,
+.feedback-form input:focus{
+    outline: none;
+}
+.feedback-form input{
+    border: none;
+    padding: 8px 16px;
+    padding-right: 40px;
+    background: transparent;
+    height: 48px;
+    width: 270px;
+    font-size: 18px;
+    color: var(--color-black);
+    font-family: var(--font-family-regular);
+}
+.feedback-form label:first-child{
+    margin-right: 30px;
+}
+.feedback-form textarea{
+    resize: none;
+    width: 370px;
+    height: 80px;
+    margin-right: 30px;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 16px;
+    color: var(--color-purple);
+    font-family: var(--font-family-bold);
+}
+.feedback-form textarea::placeholder{
+    color: var(--color-purple);
+    font-family: var(--font-family-bold);
+}
+.feedback-form button{
+    width: 170px;
+    height: 80px;
+}
+.feedback-button{
+    border-radius:20px;
+}

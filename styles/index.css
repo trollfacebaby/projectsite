@@ -1,0 +1,24 @@
+:root{
+    --color-white:#FFF;
+    --color-black:#2D3436;
+    --color-grey:#5C5C5C;
+    --color-purple:#6C5CE7;
+    --color-purple-light: #A29BFE;
+    --color-grey-32:#ADADAD;
+    --color-grey-24:#C2C2C2;
+
+    --font-family-bold: InterB, sans-serif;
+    --font-family-medium: InterM, sans-serif;
+    --font-family-light: InterL, sans-serif;
+    --font-family-regular: InterR, sans-serif;
+    --font-family-extra-bold: InterEB, sans-serif;   
+
+    --animation-speed: .3s;
+    --animation-function: ease;
+    --animation: var(--animation-speed) var(--animation-function);
+    --animation-for-img: .7s ease;
+}
+body{
+    background-color:var(--color-black);
+    margin: 0;
+}

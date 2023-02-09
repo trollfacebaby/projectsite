@@ -1,0 +1,97 @@
+<?php 
+	include('path.php'); 
+	include('app/database/db.php');
+?>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/buttons.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/grid.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/footer.css"> 
+</head>
+
+<body>
+    <!-- < header -->
+    <header class="header">
+		<div class="header-logo">
+            <a href="<?php echo BASE_URL ?>">
+                <img src="icons/icon-box (1).svg" class="header-logo-img">
+                <span class="header-title">Name</span>
+            </a>
+        </div>
+
+        <nav class="header-nav">
+            <a href="<?php echo BASE_URL . "catalog.php"?>" class="header-link">Сatalog</a>
+            <div class="header-link-point"></div>
+            <a href="<?php echo BASE_URL . "about-us.php"?>" class="header-link">About us</a>
+        
+            <div class="header-link-point"></div>
+            <a href="<?php echo BASE_URL . "feedback.php"?>" class="header-link">Feedback</a>
+
+        </nav>
+		<?php if (isset($_SESSION['id_user'])): ?>
+			<button class="purple_button header_button" onclick='window.location.href = "<?php echo BASE_URL . "logout.php"?>"'><?php echo $_SESSION['login']; ?></button>
+		<?php else: ?>
+			<button class="purple_button header_button" onclick="window.location.href = 'sign-in.php';">Sign in</button>	
+		<?php endif; ?>	
+    </header>
+    <!-- header end -->
+    <main class="main">
+        <div class="main-text">
+            <p class="main-text-title">Combine <span>fine</span> images</p>
+            <p class="main-text-subtitle">To represent a product</p>
+        </div>
+
+        <div class="main-grid">
+            <div class="main-grid-text1">Immaculate Eternity and Void, undefined worlds, abstract imagine, blablablablablabla
+            </div>
+            <div class="main-grid-text2">This is multipurpose grid, it fits for portfolio, services or agency web site
+            </div>
+            <img class="main-grid-img1" src="photos/photo1.jfif">
+            <img class="main-grid-img2" src="photos/photo2.jfif">
+            <img class="main-grid-img3" src="photos/photo3.jfif">
+            <img class="main-grid-img4" src="photos/photo4.jfif">
+            <img class="main-grid-img5" src="photos/photo5.jfif">
+            <img class="main-grid-img6" src="photos/photo6.jfif">
+            <img class="main-grid-img7" src="photos/photo.jpg">
+        </div>
+
+        <button class="white_button main-button">Catalog</button>
+
+    </main>
+    <!--<button class="purple_button">ФИОЛ</button>
+    <button class="white_button">БЕЛ</button>-->
+    <footer class="footer">
+        <div class="footer-info">
+            <div class="footer-info-socials">
+                <h3 class="footer-socials-title">FOLLOW US</h3>
+                <div class="footer-socials-container">
+                    <a href="#">
+                        <img src="icons/icon-linkedin.svg">
+                    </a>
+                    <a href="#"><img src="icons/icon-instagram.svg">
+                    </a>
+                    <a href="#"><img src="icons/icon-youtube.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-info-links">
+                <h3 class="footer-links-title">INFORMATION</h3>
+                <div class="footer-links-container">
+                    <a href="#"><span>About Fapster app</span></a>
+                    <a href="#"><span>Resources</span></a>
+                    <a href="#"><span>Privacy Policy</span></a>
+                    <a href="#"><span>Get in Touch</span></a>
+                    <a href="#"><span>We are hiring!</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 136px 0px;
+    background: url('../icons/Wave.svg') no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: var(--color-white);
+}
+.footer-socials-container{
+    margin: 8px;
+}
+.footer-socials-container > a{
+    text-decoration: none;
+    outline: none;
+    margin-right: 50px;
+}
+.footer-socials-container > a:last-child{
+    margin: 0;
+}
+.footer-socials-container > a > img{
+    border-radius: 50%;
+    transition: background var(--animation-for-img);
+}
+.footer-socials-container > a > img:hover{
+    background-color: var(--color-purple-light);
+}
+.footer-links-title,
+.footer-info-socials{
+    color: var(--color-grey-32);
+    font-size: 15px;
+    font-family: var(--font-family-medium);
+    margin: 0;
+}
+.footer-links-title{
+    margin-top: 30px;
+}
+.footer-links-container a{
+    color: var(--color-black);
+    font-size: 15px;
+    font-family: var(--font-family-regular);
+    text-decoration: none;
+}
+.footer-links-container > a > span{
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--animation);
+}
+.footer-links-container a:hover span,
+.footer-links-container a:focus span{
+    border-color: var(--color-black);
+}
+.footer-links-container{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 16px;
+}
